@@ -1,0 +1,37 @@
+.jumbotron
+{
+    color: white;
+    background-color: #eb7ec6!important;
+    font-weight:bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    background-image: url(https://ak3.picdn.net/shutterstock/videos/23036203/thumb/11.jpg);
+    background-size: 100%;
+
+  }
+
+  p{
+      font-size:40px;
+      font-family: 'Cinzel', serif;
+      font-weight:bold;
+  }
+  
+  #intro{
+    text-align: left;
+    padding: 30px;
+    font-size: 50;
+    font-family: 'Vollkorn', serif;
+    background-color:white;
+  }
+
+  #word-box {
+    font-size: 45;
+  }
+  
+  #hidden-word {
+    font-size: 45;
+  }
+
+ 
