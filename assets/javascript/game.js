@@ -1,3 +1,4 @@
+//citations at bottom of code
 //Create all the arrays to be used in the code
 var guessCounter = 0;
 var remainingGuesses = 10;
@@ -40,7 +41,6 @@ var random = "";
 
 function guessUpdate() {
   pickWord();
-  //-------------------------------------------------------------------------
   //Picks a random word from the wordsToGuess array
   var word = wordsToGuess[parseInt(random)];
   hiddenWord = [];
@@ -49,19 +49,17 @@ function guessUpdate() {
   }
   console.log(word, hiddenWord);
 
-  //-------------------------------------------------------------------------------
   //Prints the hiddenWord on the screen
   var hiddenWordDiv = document.createElement("div");
   hiddenWordDiv.id = "hidden-word";
   hiddenWordDiv.innerHTML = hiddenWord;
   document.getElementById("word-box").appendChild(hiddenWordDiv);
   removeCommas();
-  //-----------------------------------------------------------------------------
+
   //Starts game when first key is pressed
   document.onkeyup = function(event) {
     userInput = event.key;
 
-    //---------------------------------------------------------------------------
     //if-else statement making sure repeated guesses don't count against score
     if (lettersGuessed.includes(userInput)) {
       console.log(userInput + " already guessed");
@@ -102,7 +100,6 @@ function guessUpdate() {
       }
     }
 
-    //-----------------------------------------------------------------------------
     //If user guesses all letters the win counter gets added to
     if (hiddenWord.includes("_")) {
       console.log("keep guessing!");
@@ -148,4 +145,5 @@ function newGame() {
 
 guessUpdate();
 
-//to add citations and references with next git push
+//code structure and flow and syntax guided and borrowed by pseudocode from Instructor Phil and hangman guide from JavaScript for Kids 
+//https://nostarch.com/download/JS4K_ch7.pdf
