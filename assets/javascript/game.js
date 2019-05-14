@@ -39,10 +39,16 @@ var random = "";
 
 //("press any key to begin");
 
+//Picks a random word from the wordsToGuess array
+function pickWord() {
+  random = Math.floor(Math.random() * wordsToGuess.length);
+}
+
 function guessUpdate() {
   pickWord();
   //Picks a random word from the wordsToGuess array
   var word = wordsToGuess[parseInt(random)];
+//hiddenword equals the length of the chosen word from the computer (random)
   hiddenWord = [];
   for (i = 0; i < word.length; i++) {
     hiddenWord[i] = "_";
@@ -58,7 +64,7 @@ function guessUpdate() {
 
   //Starts game when first key is pressed
   document.onkeyup = function(event) {
-    userInput = event.key;
+    userInput = event.key.toLowerCase();
 
     //if-else statement making sure repeated guesses don't count against score
     if (lettersGuessed.includes(userInput)) {
@@ -111,11 +117,6 @@ function guessUpdate() {
       newGame();
     }
   };
-}
-
-//Picks a random word from the wordsToGuess array
-function pickWord() {
-  random = Math.floor(Math.random() * wordsToGuess.length);
 }
 
 //For aesthetic reasons, removes commas between "_"
