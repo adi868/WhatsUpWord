@@ -117,8 +117,7 @@ function guessUpdate() {
         hiddenWordDiv.innerHTML = hiddenWord;
         removeCommas();
       }
-    }
-
+  }
     //If user guesses all letters the win counter gets added +1 and game is reset
     //if word has not been completely guessed yet
     if (hiddenWord.includes("_")) {
