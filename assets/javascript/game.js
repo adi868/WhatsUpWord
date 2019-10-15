@@ -161,6 +161,3 @@ function newGame() {
 }
 //performs initial word to guess before loops on new game
 guessUpdate();
-
-//code structure and flow and syntax guided and borrowed by pseudocode from Instructor Phil and hangman guide from JavaScript for Kids 
-//https://nostarch.com/download/JS4K_ch7.pdf

@@ -1,0 +1,24 @@
+{
+  "name": "word-guess-game",
+  "version": "1.0.0",
+  "description": "programmed hangman-inspired game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alciancio/Word-Guess-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alciancio/Word-Guess-Game/issues"
+  },
+  "homepage": "https://github.com/alciancio/Word-Guess-Game#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
